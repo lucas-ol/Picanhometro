@@ -19,8 +19,5 @@ class AppModule extends Module {
     r.module('/${ChurrascometroModule.routeName}', module: ChurrascometroModule());
   } 
  
-  // final List<ModularRoute> routes = [
-  //   ModuleRoute('/', module: HomeModule()),
-  // ];
-
+ 
 }
