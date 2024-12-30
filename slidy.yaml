@@ -6,3 +6,9 @@ scripts:
   # Simple command (slidy run doctor)
   doctor: flutter doctor
   build_runner: flutter pub run build_runner build --delete-conflicting-outputs
+  # description: Este comando vai gerar os ícones
+  icon:
+    name: icon
+    description: Este comando vai gerar os ícones
+    run: dart run flutter_launcher_icons -f picanhometro_launcher_icons.yaml
+
