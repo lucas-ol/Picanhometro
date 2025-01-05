@@ -3,3 +3,5 @@ flutter_launcher_icons:
   ios: true
   image_path: assets/imgs/icon_app_background.png
   image_path_ios: assets/imgs/icon_app_background.jpg
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: assets/imgs/icon_app_background.png
