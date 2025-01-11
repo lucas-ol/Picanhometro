@@ -1,4 +1,4 @@
-import 'package:picanhometro/app/domain/services/churracometro/i_churracometro.dart';
+import 'package:picanhometro/app/services/churracometro/i_churracometro.dart';
 
 class Churracometro implements IChurracometro {
   // Add properties and methods here

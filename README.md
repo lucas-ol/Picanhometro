@@ -12,10 +12,10 @@ Picanhometro é uma calculadora de churrasco que ajuda a gerenciar e calcular as
 
 ## Parâmetros
 
-- `adultos`: O número de adultos presentes no evento.
-- `criancas`: O número de crianças presentes no evento.
-- `bebem`: O número de pessoas que irão beber álcool.
-- `duracao`: A duração do evento em horas.
+- `Adultos`: O número de adultos presentes no evento.
+- `Criancas`: O número de crianças presentes no evento.
+- `Bebem`: O número de pessoas que irão beber álcool.
+- `Duracao`: A duração do evento em horas.
 
 ## Cálculos
 
@@ -42,16 +42,15 @@ Picanhometro é uma calculadora de churrasco que ajuda a gerenciar e calcular as
 - As quantidades são calculadas em gramas para carne, linguiça e pão de alho.
 - As quantidades são calculadas em mililitros para cerveja e refrigerante.
 
-## Futuras Features
-
 
 ## Futuras Features
 
- | **Task**            | **Status**   |
-|-----------------------|--------------|
-| Estrutura do projeto   | ✅ Concluído  |
-| Criar cálculos base    | ✅ Concluído  |
-| Melhorar interface     | ❌ Pendente   |
-| Logs e métricas         | ❌ Pendente   |
-| Integração com Firebase | ❌ Pendente   |
-| Cálculo para cocktails  | ❌ Pendente   |
+ | **Task**                | **Status**  |
+ | ----------------------- | ----------- |
+ | Estrutura do projeto    | ✅ Concluído |
+ | Criar cálculos base     | ✅ Concluído |
+ | Integraçaõ com firebase | ❌ Pendente  |
+ | Melhorar interface      | ❌ Pendente  |
+ | Logs e métricas         | ❌ Pendente  |
+ | Integração com Firebase | ❌ Pendente  |
+ | Cálculo para cocktails  | ❌ Pendente  |

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:picanhometro/app/modules/churrascometro/churrascometro_module.dart';
 import 'home_store.dart';
@@ -12,12 +13,13 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  late final HomeStore store;
+  late final HomeStore _store;
 
   @override
   void initState() {
     super.initState();
-    store = Modular.get<HomeStore>();
+    _store = Modular.get<HomeStore>();
+    _store.loadDrinks();
   }
 
   @override
@@ -26,14 +28,30 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Counter'),
       ),
-      body: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () =>
-                Modular.to.pushNamed("${ChurrascometroModule.routeName}/"),
-            child: const Text("Churrascometro"),
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () =>
+                  Modular.to.pushNamed("${ChurrascometroModule.routeName}/"),
+              child: const Text("Churrascometro"),
+            ),
+            Observer(
+              builder: (_) {
+                final drinks = _store.drinks;
+                return Column(
+                  children: drinks
+                      .map((x) => Row(
+                            children: [
+                              Text(x.name),
+                            ],
+                          ))
+                      .toList(),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -25,10 +25,27 @@ mixin _$HomeStore on HomeStoreBase, Store {
     });
   }
 
+  late final _$drinksAtom =
+      Atom(name: 'HomeStoreBase.drinks', context: context);
+
+  @override
+  List<Recipes> get drinks {
+    _$drinksAtom.reportRead();
+    return super.drinks;
+  }
+
+  @override
+  set drinks(List<Recipes> value) {
+    _$drinksAtom.reportWrite(value, super.drinks, () {
+      super.drinks = value;
+    });
+  }
+
   @override
   String toString() {
     return '''
-counter: ${counter}
+counter: ${counter},
+drinks: ${drinks}
     ''';
   }
 }
