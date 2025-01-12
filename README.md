@@ -1,4 +1,7 @@
 # Picanhometro
+![Build Status](https://github.com/lucas-ol/Picanhometro/actions/workflows/dart.yml/badge.svg)
+![Relase](https://github.com/lucas-ol/Picanhometro/actions/workflows/relase.yml/badge.svg)
+
 
 Picanhometro é uma calculadora de churrasco que ajuda a gerenciar e calcular as quantidades necessárias de vários itens com base no número de adultos, crianças, bebedores e a duração do evento.
 
