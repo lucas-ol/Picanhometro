@@ -21,15 +21,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-          
-      - name: 'Checkout Flutter '
-        shell: bash
-        run: |
-         cd $FLUTTER_ROOT;
-         git fetch --tags;
-         git checkout 3.27.1;
-         flutter --version;
-         
+                   
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
