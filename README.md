@@ -49,6 +49,7 @@ Picanhometro é uma calculadora de churrasco que ajuda a gerenciar e calcular as
  | ----------------------- | ----------- |
  | Estrutura do projeto    | ✅ Concluído |
  | Criar cálculos base     | ✅ Concluído |
+  | Adicionar cálculo para Carvão | ❌ Pendente  |
  | Integraçaõ com firebase | ❌ Pendente  |
  | Melhorar interface      | ❌ Pendente  |
  | Logs e métricas         | ❌ Pendente  |
